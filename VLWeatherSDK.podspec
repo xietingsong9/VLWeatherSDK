@@ -66,7 +66,7 @@ Weather information can be obtained by city name, zip code, longitude and latitu
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "12.1"
+  spec.platform     = :ios, "10.1"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "12.1"
@@ -92,10 +92,12 @@ Weather information can be obtained by city name, zip code, longitude and latitu
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "VLWeatherSDK", "VLWeatherSDK.framework/**/*"
-  spec.exclude_files = "Classes/Exclude"
-spec.preserve_paths = "VLWeatherSDK.framework"
-  spec.public_header_files = "VLWeatherSDK.framework/**/*.h"
+  spec.source_files  = "VLWeatherSDK", "VLWeatherKit/VLWeatherSDK.framework/**/*.h"
+#  spec.exclude_files = "Classes/Exclude"
+#spec.preserve_paths = "VLWeatherSDK.framework"
+#  spec.public_header_files = "VLWeatherSDK.framework/**/*.h"
+  spec.preserve_paths    = 'VLWeatherKit/VLWeatherSDK.framework'
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -119,7 +121,7 @@ spec.preserve_paths = "VLWeatherSDK.framework"
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+   spec.frameworks = "CoreGraphics", "CoreLocation", "Foundation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
