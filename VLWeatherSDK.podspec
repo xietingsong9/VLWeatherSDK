@@ -92,10 +92,10 @@ Weather information can be obtained by city name, zip code, longitude and latitu
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "VLWeatherSDK", "VLWeatherSDK.framework/**/*"
+  spec.source_files  = "VLWeatherSDK", "VLWeatherSDK/**/*"
 #  spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "VLWeatherSDK.framework/**/*.h"
+  spec.public_header_files = "VLWeatherSDK/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
