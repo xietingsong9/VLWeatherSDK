@@ -110,6 +110,7 @@ Weather information can be obtained by city name, zip code, longitude and latitu
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
+	spec.vendored_frameworks ='VLWeatherSDK/Framework/VLWeatherSDK.framework'
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
